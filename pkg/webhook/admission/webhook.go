@@ -19,6 +19,7 @@ package admission
 import (
 	"context"
 	"errors"
+	"fmt"
 	"net/http"
 
 	"github.com/go-logr/logr"
@@ -137,6 +138,7 @@ func (w *Webhook) InjectLogger(l logr.Logger) error {
 // If the webhook is validating type, it delegates the AdmissionRequest to each handler and
 // deny the request if anyone denies.
 func (w *Webhook) Handle(ctx context.Context, req Request) Response {
+	fmt.Println("Webhook Handle was called")
 	resp := w.Handler.Handle(ctx, req)
 	if err := resp.Complete(req); err != nil {
 		w.log.Error(err, "unable to encode response")

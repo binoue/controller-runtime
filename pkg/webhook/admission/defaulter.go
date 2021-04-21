@@ -19,6 +19,7 @@ package admission
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"net/http"
 
 	"k8s.io/apimachinery/pkg/runtime"
@@ -52,6 +53,7 @@ func (h *mutatingHandler) InjectDecoder(d *Decoder) error {
 
 // Handle handles admission requests.
 func (h *mutatingHandler) Handle(ctx context.Context, req Request) Response {
+	fmt.Println("mutatingHandler Handle  was called")
 	if h.defaulter == nil {
 		panic("defaulter should never be nil")
 	}

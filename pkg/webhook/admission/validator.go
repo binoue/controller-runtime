@@ -19,6 +19,7 @@ package admission
 import (
 	"context"
 	goerrors "errors"
+	"fmt"
 	"net/http"
 
 	v1 "k8s.io/api/admission/v1"
@@ -56,6 +57,7 @@ func (h *validatingHandler) InjectDecoder(d *Decoder) error {
 
 // Handle handles admission requests.
 func (h *validatingHandler) Handle(ctx context.Context, req Request) Response {
+	fmt.Println("validatingHandler Handle in controller runtime called")
 	if h.validator == nil {
 		panic("validator should never be nil")
 	}
