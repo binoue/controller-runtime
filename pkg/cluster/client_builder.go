@@ -19,8 +19,8 @@ package cluster
 import (
 	"k8s.io/client-go/rest"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/client"
+	"github.com/binoue/controller-runtime/pkg/cache"
+	"github.com/binoue/controller-runtime/pkg/client"
 )
 
 // ClientBuilder builder is the interface for the client builder.

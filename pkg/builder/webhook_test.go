@@ -31,10 +31,10 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"sigs.k8s.io/controller-runtime/pkg/controller"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/scheme"
-	"sigs.k8s.io/controller-runtime/pkg/webhook/admission"
+	"github.com/binoue/controller-runtime/pkg/controller"
+	"github.com/binoue/controller-runtime/pkg/manager"
+	"github.com/binoue/controller-runtime/pkg/scheme"
+	"github.com/binoue/controller-runtime/pkg/webhook/admission"
 )
 
 var _ = Describe("webhook", func() {

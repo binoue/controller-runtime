@@ -1,7 +1,7 @@
 package envtest
 
 import (
-	"sigs.k8s.io/controller-runtime/pkg/envtest/printer"
+	"github.com/binoue/controller-runtime/pkg/envtest/printer"
 )
 
 // NewlineReporter is Reporter that Prints a newline after the default Reporter output so that the results

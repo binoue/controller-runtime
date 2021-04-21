@@ -19,9 +19,9 @@ package webhook_test
 import (
 	"context"
 
-	ctrl "sigs.k8s.io/controller-runtime"
-	. "sigs.k8s.io/controller-runtime/pkg/webhook"
-	"sigs.k8s.io/controller-runtime/pkg/webhook/admission"
+	ctrl "github.com/binoue/controller-runtime"
+	. "github.com/binoue/controller-runtime/pkg/webhook"
+	"github.com/binoue/controller-runtime/pkg/webhook/admission"
 )
 
 func Example() {

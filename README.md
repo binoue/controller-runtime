@@ -1,4 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/sigs.k8s.io/controller-runtime)](https://goreportcard.com/report/sigs.k8s.io/controller-runtime)
+[![Go Report Card](https://goreportcard.com/badge/github.com/binoue/controller-runtime)](https://goreportcard.com/report/github.com/binoue/controller-runtime)
 
 # Kubernetes controller-runtime Project
 
@@ -63,4 +63,3 @@ Before starting any work, please either comment on an existing issue, or file a 
 ## Code of conduct
 
 Participation in the Kubernetes community is governed by the [Kubernetes Code of Conduct](code-of-conduct.md).
-

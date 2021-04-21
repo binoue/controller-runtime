@@ -19,7 +19,7 @@ package metrics
 import (
 	"github.com/prometheus/client_golang/prometheus"
 
-	"sigs.k8s.io/controller-runtime/pkg/metrics"
+	"github.com/binoue/controller-runtime/pkg/metrics"
 )
 
 var (

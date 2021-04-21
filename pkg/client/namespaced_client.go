@@ -21,11 +21,11 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/binoue/controller-runtime/pkg/client/apiutil"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
 )
 
 // NewNamespacedClient wraps an existing client enforcing the namespace value.

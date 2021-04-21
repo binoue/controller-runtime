@@ -35,14 +35,14 @@ import (
 	"k8s.io/client-go/tools/leaderelection/resourcelock"
 	"k8s.io/client-go/tools/record"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/cluster"
-	"sigs.k8s.io/controller-runtime/pkg/healthz"
-	intrec "sigs.k8s.io/controller-runtime/pkg/internal/recorder"
-	"sigs.k8s.io/controller-runtime/pkg/metrics"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
-	"sigs.k8s.io/controller-runtime/pkg/webhook"
+	"github.com/binoue/controller-runtime/pkg/cache"
+	"github.com/binoue/controller-runtime/pkg/client"
+	"github.com/binoue/controller-runtime/pkg/cluster"
+	"github.com/binoue/controller-runtime/pkg/healthz"
+	intrec "github.com/binoue/controller-runtime/pkg/internal/recorder"
+	"github.com/binoue/controller-runtime/pkg/metrics"
+	"github.com/binoue/controller-runtime/pkg/runtime/inject"
+	"github.com/binoue/controller-runtime/pkg/webhook"
 )
 
 const (

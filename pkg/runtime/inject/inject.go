@@ -24,9 +24,9 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/rest"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
+	"github.com/binoue/controller-runtime/pkg/cache"
+	"github.com/binoue/controller-runtime/pkg/client"
+	logf "github.com/binoue/controller-runtime/pkg/internal/log"
 )
 
 // log is specifically to add a warning message for injectors.

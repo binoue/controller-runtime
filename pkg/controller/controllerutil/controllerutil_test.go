@@ -21,6 +21,8 @@ import (
 	"fmt"
 	"math/rand"
 
+	"github.com/binoue/controller-runtime/pkg/client"
+	"github.com/binoue/controller-runtime/pkg/controller/controllerutil"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	appsv1 "k8s.io/api/apps/v1"
@@ -30,8 +32,6 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/kubernetes/scheme"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 )
 
 var _ = Describe("Controllerutil", func() {

@@ -19,15 +19,15 @@ package envtest
 import (
 	"testing"
 
+	"github.com/binoue/controller-runtime/pkg/client"
+	"github.com/binoue/controller-runtime/pkg/envtest/printer"
+	logf "github.com/binoue/controller-runtime/pkg/log"
+	"github.com/binoue/controller-runtime/pkg/log/zap"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	admissionv1 "k8s.io/api/admissionregistration/v1"
 	admissionv1beta1 "k8s.io/api/admissionregistration/v1beta1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/envtest/printer"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 )
 
 func TestSource(t *testing.T) {

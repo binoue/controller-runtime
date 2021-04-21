@@ -22,18 +22,18 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
+	"github.com/binoue/controller-runtime/pkg/envtest"
+	"github.com/binoue/controller-runtime/pkg/envtest/printer"
+	"github.com/binoue/controller-runtime/pkg/internal/testing/integration/addr"
+	logf "github.com/binoue/controller-runtime/pkg/log"
+	"github.com/binoue/controller-runtime/pkg/log/zap"
+	"github.com/binoue/controller-runtime/pkg/metrics"
+	"github.com/binoue/controller-runtime/pkg/webhook"
 	apiextensionsv1beta1 "k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1"
 	"k8s.io/apimachinery/pkg/api/meta"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/rest"
-	"sigs.k8s.io/controller-runtime/pkg/envtest"
-	"sigs.k8s.io/controller-runtime/pkg/envtest/printer"
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/integration/addr"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
-	"sigs.k8s.io/controller-runtime/pkg/metrics"
-	"sigs.k8s.io/controller-runtime/pkg/webhook"
 )
 
 func TestBuilder(t *testing.T) {

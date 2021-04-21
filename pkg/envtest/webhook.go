@@ -23,6 +23,9 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/binoue/controller-runtime/pkg/client"
+	"github.com/binoue/controller-runtime/pkg/internal/testing/integration"
+	"github.com/binoue/controller-runtime/pkg/internal/testing/integration/addr"
 	"k8s.io/apimachinery/pkg/api/errors"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -32,9 +35,6 @@ import (
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/rest"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/integration"
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/integration/addr"
 	"sigs.k8s.io/yaml"
 )
 

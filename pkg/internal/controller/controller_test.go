@@ -22,6 +22,15 @@ import (
 	"sync"
 	"time"
 
+	"github.com/binoue/controller-runtime/pkg/cache"
+	"github.com/binoue/controller-runtime/pkg/cache/informertest"
+	"github.com/binoue/controller-runtime/pkg/controller/controllertest"
+	"github.com/binoue/controller-runtime/pkg/handler"
+	ctrlmetrics "github.com/binoue/controller-runtime/pkg/internal/controller/metrics"
+	"github.com/binoue/controller-runtime/pkg/internal/log"
+	"github.com/binoue/controller-runtime/pkg/predicate"
+	"github.com/binoue/controller-runtime/pkg/reconcile"
+	"github.com/binoue/controller-runtime/pkg/source"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/prometheus/client_golang/prometheus"
@@ -30,15 +39,6 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/util/workqueue"
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/cache/informertest"
-	"sigs.k8s.io/controller-runtime/pkg/controller/controllertest"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	ctrlmetrics "sigs.k8s.io/controller-runtime/pkg/internal/controller/metrics"
-	"sigs.k8s.io/controller-runtime/pkg/internal/log"
-	"sigs.k8s.io/controller-runtime/pkg/predicate"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/source"
 )
 
 var _ = Describe("controller", func() {

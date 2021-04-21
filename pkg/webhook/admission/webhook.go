@@ -29,7 +29,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/json"
 
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
+	"github.com/binoue/controller-runtime/pkg/runtime/inject"
 )
 
 var (

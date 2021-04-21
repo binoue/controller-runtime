@@ -19,14 +19,14 @@ package builder_test
 import (
 	"os"
 
-	"sigs.k8s.io/controller-runtime/pkg/builder"
-	"sigs.k8s.io/controller-runtime/pkg/client/config"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
-	"sigs.k8s.io/controller-runtime/pkg/webhook/admission"
+	"github.com/binoue/controller-runtime/pkg/builder"
+	"github.com/binoue/controller-runtime/pkg/client/config"
+	logf "github.com/binoue/controller-runtime/pkg/log"
+	"github.com/binoue/controller-runtime/pkg/manager"
+	"github.com/binoue/controller-runtime/pkg/manager/signals"
+	"github.com/binoue/controller-runtime/pkg/webhook/admission"
 
-	examplegroup "sigs.k8s.io/controller-runtime/examples/crd/pkg"
+	examplegroup "github.com/binoue/controller-runtime/examples/crd/pkg"
 )
 
 // examplegroup.ChaosPod has implemented both admission.Defaulter and

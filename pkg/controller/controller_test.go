@@ -24,11 +24,11 @@ import (
 	. "github.com/onsi/gomega"
 	"go.uber.org/goleak"
 
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/controller"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
+	"github.com/binoue/controller-runtime/pkg/client"
+	"github.com/binoue/controller-runtime/pkg/controller"
+	"github.com/binoue/controller-runtime/pkg/manager"
+	"github.com/binoue/controller-runtime/pkg/reconcile"
+	"github.com/binoue/controller-runtime/pkg/runtime/inject"
 )
 
 var _ = Describe("controller.Controller", func() {

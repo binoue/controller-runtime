@@ -1,4 +1,4 @@
-module sigs.k8s.io/controller-runtime/hack/tools
+module github.com/binoue/controller-runtime/hack/tools
 
 go 1.15
 

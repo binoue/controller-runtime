@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/integration/addr"
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/integration/internal"
+	"github.com/binoue/controller-runtime/pkg/internal/testing/integration/addr"
+	"github.com/binoue/controller-runtime/pkg/internal/testing/integration/internal"
 )
 
 // APIServer knows how to run a kubernetes apiserver.

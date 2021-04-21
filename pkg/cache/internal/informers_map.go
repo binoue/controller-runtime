@@ -35,7 +35,7 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/cache"
 
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
+	"github.com/binoue/controller-runtime/pkg/client/apiutil"
 )
 
 // clientListWatcherFunc knows how to create a ListWatcher

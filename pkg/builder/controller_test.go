@@ -34,16 +34,16 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/util/workqueue"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/controller"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/predicate"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/scheme"
-	"sigs.k8s.io/controller-runtime/pkg/source"
+	"github.com/binoue/controller-runtime/pkg/cache"
+	"github.com/binoue/controller-runtime/pkg/client"
+	"github.com/binoue/controller-runtime/pkg/controller"
+	"github.com/binoue/controller-runtime/pkg/event"
+	"github.com/binoue/controller-runtime/pkg/handler"
+	"github.com/binoue/controller-runtime/pkg/manager"
+	"github.com/binoue/controller-runtime/pkg/predicate"
+	"github.com/binoue/controller-runtime/pkg/reconcile"
+	"github.com/binoue/controller-runtime/pkg/scheme"
+	"github.com/binoue/controller-runtime/pkg/source"
 )
 
 type typedNoop struct{}

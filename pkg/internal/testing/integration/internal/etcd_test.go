@@ -3,7 +3,7 @@ package internal_test
 import (
 	"net/url"
 
-	. "sigs.k8s.io/controller-runtime/pkg/internal/testing/integration/internal"
+	. "github.com/binoue/controller-runtime/pkg/internal/testing/integration/internal"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

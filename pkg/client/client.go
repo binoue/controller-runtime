@@ -30,7 +30,7 @@ import (
 	"k8s.io/client-go/metadata"
 	"k8s.io/client-go/rest"
 
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
+	"github.com/binoue/controller-runtime/pkg/client/apiutil"
 )
 
 // Options are creation options for a Client

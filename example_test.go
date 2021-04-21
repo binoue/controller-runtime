@@ -22,10 +22,10 @@ import (
 	"os"
 	"time"
 
+	controllers "github.com/binoue/controller-runtime"
+	"github.com/binoue/controller-runtime/pkg/client"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
-	controllers "sigs.k8s.io/controller-runtime"
-	"sigs.k8s.io/controller-runtime/pkg/client"
 )
 
 // This example creates a simple application Controller that is configured for ReplicaSets and Pods.

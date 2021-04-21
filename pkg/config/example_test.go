@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/binoue/controller-runtime/pkg/config"
 	"k8s.io/apimachinery/pkg/runtime"
-	"sigs.k8s.io/controller-runtime/pkg/config"
 
-	"sigs.k8s.io/controller-runtime/examples/configfile/custom/v1alpha1"
+	"github.com/binoue/controller-runtime/examples/configfile/custom/v1alpha1"
 )
 
 var scheme = runtime.NewScheme()

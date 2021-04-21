@@ -23,10 +23,10 @@ import (
 	"os/user"
 	"path"
 
+	logf "github.com/binoue/controller-runtime/pkg/internal/log"
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
 )
 
 var (

@@ -19,11 +19,11 @@ package healthz_test
 import (
 	"testing"
 
+	"github.com/binoue/controller-runtime/pkg/envtest/printer"
+	logf "github.com/binoue/controller-runtime/pkg/log"
+	"github.com/binoue/controller-runtime/pkg/log/zap"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"sigs.k8s.io/controller-runtime/pkg/envtest/printer"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 )
 
 func TestHealthz(t *testing.T) {

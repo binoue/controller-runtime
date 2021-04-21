@@ -17,20 +17,20 @@ limitations under the License.
 package internal_test
 
 import (
+	"github.com/binoue/controller-runtime/pkg/event"
+	"github.com/binoue/controller-runtime/pkg/handler"
+	"github.com/binoue/controller-runtime/pkg/source/internal"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	"sigs.k8s.io/controller-runtime/pkg/source/internal"
 
+	"github.com/binoue/controller-runtime/pkg/controller/controllertest"
+	"github.com/binoue/controller-runtime/pkg/predicate"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"sigs.k8s.io/controller-runtime/pkg/controller/controllertest"
-	"sigs.k8s.io/controller-runtime/pkg/predicate"
 )
 
 var _ = Describe("Internal", func() {

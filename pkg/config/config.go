@@ -21,10 +21,10 @@ import (
 	ioutil "io/ioutil"
 	"sync"
 
+	"github.com/binoue/controller-runtime/pkg/config/v1alpha1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/serializer"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-	"sigs.k8s.io/controller-runtime/pkg/config/v1alpha1"
 )
 
 // ControllerManagerConfiguration defines the functions necessary to parse a config file

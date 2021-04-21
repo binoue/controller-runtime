@@ -11,12 +11,12 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/binoue/controller-runtime/pkg/internal/testing/integration/addr"
+	. "github.com/binoue/controller-runtime/pkg/internal/testing/integration/internal"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gexec"
 	"github.com/onsi/gomega/ghttp"
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/integration/addr"
-	. "sigs.k8s.io/controller-runtime/pkg/internal/testing/integration/internal"
 )
 
 const (

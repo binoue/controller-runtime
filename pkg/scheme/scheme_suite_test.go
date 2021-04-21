@@ -22,7 +22,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"sigs.k8s.io/controller-runtime/pkg/envtest/printer"
+	"github.com/binoue/controller-runtime/pkg/envtest/printer"
 )
 
 func TestScheme(t *testing.T) {

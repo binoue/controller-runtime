@@ -19,17 +19,17 @@ package main
 import (
 	"os"
 
+	ctrl "github.com/binoue/controller-runtime"
+	"github.com/binoue/controller-runtime/pkg/client/config"
+	cfg "github.com/binoue/controller-runtime/pkg/config"
+	"github.com/binoue/controller-runtime/pkg/log"
+	"github.com/binoue/controller-runtime/pkg/log/zap"
+	"github.com/binoue/controller-runtime/pkg/manager/signals"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	clientgoscheme "k8s.io/client-go/kubernetes/scheme"
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
-	ctrl "sigs.k8s.io/controller-runtime"
-	"sigs.k8s.io/controller-runtime/pkg/client/config"
-	cfg "sigs.k8s.io/controller-runtime/pkg/config"
-	"sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
-	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
 )
 
 var scheme = runtime.NewScheme()

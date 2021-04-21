@@ -6,7 +6,7 @@ import (
 
 	"net/url"
 
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/integration/internal"
+	"github.com/binoue/controller-runtime/pkg/internal/testing/integration/internal"
 )
 
 // Etcd knows how to run an etcd server.

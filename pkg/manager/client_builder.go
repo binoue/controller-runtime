@@ -17,7 +17,7 @@ limitations under the License.
 package manager
 
 import (
-	"sigs.k8s.io/controller-runtime/pkg/cluster"
+	"github.com/binoue/controller-runtime/pkg/cluster"
 )
 
 // ClientBuilder builder is the interface for the client builder.

@@ -19,7 +19,7 @@ package recorder_test
 import (
 	corev1 "k8s.io/api/core/v1"
 
-	"sigs.k8s.io/controller-runtime/pkg/recorder"
+	"github.com/binoue/controller-runtime/pkg/recorder"
 )
 
 var (

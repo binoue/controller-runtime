@@ -6,7 +6,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	. "sigs.k8s.io/controller-runtime/pkg/internal/testing/integration"
+	. "github.com/binoue/controller-runtime/pkg/internal/testing/integration"
 )
 
 var _ = Describe("Kubectl", func() {

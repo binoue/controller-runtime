@@ -20,6 +20,12 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/binoue/controller-runtime/pkg/cache"
+	"github.com/binoue/controller-runtime/pkg/cache/informertest"
+	"github.com/binoue/controller-runtime/pkg/client"
+	logf "github.com/binoue/controller-runtime/pkg/internal/log"
+	intrec "github.com/binoue/controller-runtime/pkg/internal/recorder"
+	"github.com/binoue/controller-runtime/pkg/runtime/inject"
 	"github.com/go-logr/logr"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
@@ -27,12 +33,6 @@ import (
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/rest"
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/cache/informertest"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
-	intrec "sigs.k8s.io/controller-runtime/pkg/internal/recorder"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
 )
 
 type fakeClientBuilder struct {

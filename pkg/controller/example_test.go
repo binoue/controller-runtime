@@ -20,16 +20,16 @@ import (
 	"context"
 	"os"
 
+	"github.com/binoue/controller-runtime/pkg/controller"
+	"github.com/binoue/controller-runtime/pkg/handler"
+	logf "github.com/binoue/controller-runtime/pkg/log"
+	"github.com/binoue/controller-runtime/pkg/manager"
+	"github.com/binoue/controller-runtime/pkg/manager/signals"
+	"github.com/binoue/controller-runtime/pkg/reconcile"
+	"github.com/binoue/controller-runtime/pkg/source"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"sigs.k8s.io/controller-runtime/pkg/controller"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/source"
 )
 
 var (

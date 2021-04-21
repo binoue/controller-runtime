@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"net"
 
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
+	logf "github.com/binoue/controller-runtime/pkg/internal/log"
 )
 
 var log = logf.RuntimeLog.WithName("metrics")

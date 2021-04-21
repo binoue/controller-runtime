@@ -22,17 +22,17 @@ import (
 	"fmt"
 	"sync"
 
+	"github.com/binoue/controller-runtime/pkg/client"
+	"github.com/binoue/controller-runtime/pkg/event"
+	"github.com/binoue/controller-runtime/pkg/handler"
+	logf "github.com/binoue/controller-runtime/pkg/internal/log"
+	"github.com/binoue/controller-runtime/pkg/runtime/inject"
+	"github.com/binoue/controller-runtime/pkg/source/internal"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/client-go/util/workqueue"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
-	"sigs.k8s.io/controller-runtime/pkg/source/internal"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/predicate"
+	"github.com/binoue/controller-runtime/pkg/cache"
+	"github.com/binoue/controller-runtime/pkg/predicate"
 )
 
 var log = logf.RuntimeLog.WithName("source")

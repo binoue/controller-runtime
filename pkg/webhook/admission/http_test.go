@@ -29,8 +29,8 @@ import (
 
 	admissionv1 "k8s.io/api/admission/v1"
 
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
+	logf "github.com/binoue/controller-runtime/pkg/internal/log"
+	"github.com/binoue/controller-runtime/pkg/runtime/inject"
 )
 
 var _ = Describe("Admission Webhooks", func() {

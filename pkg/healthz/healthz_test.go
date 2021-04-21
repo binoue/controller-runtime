@@ -21,9 +21,9 @@ import (
 	"net/http"
 	"net/http/httptest"
 
+	"github.com/binoue/controller-runtime/pkg/healthz"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"sigs.k8s.io/controller-runtime/pkg/healthz"
 )
 
 const (

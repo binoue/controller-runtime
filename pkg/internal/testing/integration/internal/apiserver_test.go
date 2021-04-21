@@ -1,9 +1,9 @@
 package internal_test
 
 import (
+	. "github.com/binoue/controller-runtime/pkg/internal/testing/integration/internal"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	. "sigs.k8s.io/controller-runtime/pkg/internal/testing/integration/internal"
 )
 
 var _ = Describe("Apiserver", func() {

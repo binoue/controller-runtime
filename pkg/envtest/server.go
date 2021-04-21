@@ -23,12 +23,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/binoue/controller-runtime/pkg/client"
+	"github.com/binoue/controller-runtime/pkg/client/config"
+	"github.com/binoue/controller-runtime/pkg/internal/testing/integration"
 	"k8s.io/client-go/rest"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/client/config"
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/integration"
 
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
+	logf "github.com/binoue/controller-runtime/pkg/internal/log"
 )
 
 var log = logf.RuntimeLog.WithName("test-env")

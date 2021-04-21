@@ -9,11 +9,11 @@ import (
 
 	flag "github.com/spf13/pflag"
 
+	ctrl "github.com/binoue/controller-runtime"
+	"github.com/binoue/controller-runtime/pkg/envtest"
+	"github.com/binoue/controller-runtime/pkg/log/zap"
 	"k8s.io/client-go/tools/clientcmd"
 	kcapi "k8s.io/client-go/tools/clientcmd/api"
-	ctrl "sigs.k8s.io/controller-runtime"
-	"sigs.k8s.io/controller-runtime/pkg/envtest"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 )
 
 var (
